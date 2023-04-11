@@ -1,0 +1,22 @@
+name: CI
+on: push
+
+jobs:
+
+  deploy:
+    name: Deploy challenge
+    runs-on: ubuntu-latest
+    needs: cancel
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    
+    - name: Run container
+      run: docker-compose up -d 
+    
+    - uses: apogiatzis/ngrok-tunneling-action@<VERSION>
+      with:
+        timeout: 1h
+        port: 4000
+        ngrok_authtoken: ${{ secrets.2L4r6ASQ0BwvEvX9Qj6n5IZkB1D_RKjxJDecwKxaXch2Tz62 }}
