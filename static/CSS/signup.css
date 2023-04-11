@@ -1,0 +1,137 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/Images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+  margin: 8px 0;
+  border: 1px solid #22a1a9;
+  border-radius: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+input[type="text"]:hover,
+input[type="password"]:hover {
+  
+  border: 3px solid #22a1a9;
+ 
+}
+label{
+  font-size: 28px;
+}
+.username-div{
+  margin-top: 1rem;
+}
+
+button {
+  background: linear-gradient(
+    90deg,
+    #389489 4.96%,
+    #00acac 48.8%,
+    #22a1a9 91.16%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 24px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 24px;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  
+}
+
+span.psw {
+  float: right;
+  color: #9a9797;
+  font-size: 20px;
+  font-weight: 600;
+}
+.end-line {
+  width: auto;
+  font-size: 20px;
+  color: #8a8a8a;
+}
+.enline-div {
+  margin-top: 0rem;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/* ====================== Login Form section ====================================== */
+
+.login-form-section {
+  padding-inline: 20rem;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+.login-form-div {
+  background-color: white;
+  padding-inline: 4rem;
+  padding-top: 4rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+}
+label b {
+  font-size: 28px;
+  color: #6c6c6c;
+}
+.username-icon {
+  position: relative;
+}
+
+.username-icon .fa-solid {
+  position: absolute;
+  top: 15px;
+  font-size: 26px;
+  right: 18px;
+  color: #b3b3b3;
+}
+.username-icon .fa-solid:hover {
+  color: #22a1a9;
+}

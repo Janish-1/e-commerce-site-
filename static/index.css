@@ -1,0 +1,577 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/Images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.digit-count{
+  font-size: 9px;
+  font-weight: 600;
+  position: relative;
+  border-radius: 50%;
+  color: black;
+  border: 2px solid black;
+  top: -6px;
+  left: -10px;
+  padding: 3px;
+  background-color: white;
+}
+/* ============================ Nav Bar Start ================================================== */
+.mainLoginInput{
+  height: 40px;
+  padding: 0px;
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.mainLoginInput::-webkit-input-placeholder { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: hsl(9, 40%, 60%);
+}
+
+.mainLoginInput::-moz-placeholder  { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: hsl(9, 40%, 60%);
+}
+
+.mainLoginInput:-ms-input-placeholder  { 
+font-family: FontAwesome;
+font-weight: normal;
+overflow: visible;
+vertical-align: top;
+display: inline-block !important;
+padding-left: 5px;
+padding-top: 2px;
+color: hsl(9, 40%, 60%);
+}
+/* =============================== Searchbar icon placeholder ====================== */
+.navArea .circle1 {
+  border-radius: 50%;
+  margin-left: 4rem;
+  padding: 27px;
+  margin-bottom: -19px;
+  background-color: #fff;
+}
+.navleft {
+  margin-left: 12rem;
+}
+.box {
+  width: 100%;
+  background: #333;
+  display: inline-block;
+}
+#icon {
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  padding-left: 10px;
+}
+#icon a {
+  text-decoration: none;
+}
+nav {
+  display: none;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0;
+  background-color: #11575c;
+}
+nav li {
+  display: block;
+  font-size: 16px;
+  color: white;
+  margin: 0 5px;
+}
+ul.navArea > li > a {
+  color: #fff;
+}
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.sub-menu li {
+  list-style-type: none;
+  display: inline-block;
+  width: 140px;
+}
+ul.navArea li ul.sub-menu {
+  display: none;
+  position: absolute;
+}
+ul.navArea li {
+  position: relative;
+}
+ul.navArea li:hover ul.sub-menu {
+  display: block;
+}
+.sub-menu li {
+  margin-left: 0 !important;
+}
+ul.sub-menu > li > a {
+  color: #fff;
+}
+ul.navArea > li > a:hover,
+ul.sub-menu > li > a:hover {
+  color: deepskyblue;
+}
+#searchBox {
+  display: inline-block;
+  padding-top: 4px;
+  padding-right: 42px;
+  float: right;
+}
+#searchBox input {
+  width: 300px;
+  float: left;
+  border-radius: 2px 0 0 2px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+}
+#submitBtn {
+  width: auto !important;
+  float: right;
+  border-radius: 0 5px 5px 0;
+  background: #565656;
+  font-size: 13px;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+#submitBtn .search-fa-icon {
+  padding: 0px;
+}
+
+@media only screen and (max-width: 720px) {
+  nav ul {
+    width: 100% !important;
+  }
+  #sub-menu {
+    display: none;
+  }
+  nav a {
+    padding: 5px 10px;
+  }
+  .box {
+    padding: 5px;
+  }
+  #navArea {
+    display: none;
+    height: 24px;
+    line-height: 24px;
+  }
+  .toggle-nav {
+    padding: 6px 10px;
+  }
+  #searchBox input {
+    width: 150px;
+    padding: 5px;
+    margin: 0;
+  }
+  #icon img {
+    width: 22px;
+  }
+}
+@media only screen and (min-width: 720px) {
+  #icon {
+    display: none;
+  }
+  #navArea {
+    height: 50px;
+    line-height: 50px;
+  }
+  nav {
+    display: block !important;
+  }
+  nav li {
+    display: inline-block;
+  }
+  #searchBox input {
+    height: 50px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  #icon img {
+    width: 22px;
+  }
+}
+
+/* ============================ Navbar Section End ============================================== */
+
+.fafaitem-space {
+  margin-left: 4px;
+}
+/* ================ Sliding Section Added ================================ */
+.container_2 {
+  position: relative;
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.items-position {
+  position: relative;
+}
+.img-heading {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.img-heading h1 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+.Arrow-position-1 {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+}
+.Arrow-position-2 {
+  position: absolute;
+  top: 90%;
+  right: 20%;
+}
+.carousel-indicators {
+  display: none;
+}
+.cards-items-wish {
+  position: relative;
+}
+/* ====================== Sliding Images End ============================ */
+
+/* ======================= Sliding Cards Start ===================================== */
+
+.section-2-cardSlider{
+	margin-top: 16rem;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 100%;
+}
+.cards-items-wish {
+  height: 100%;
+  padding: 4px;
+  text-align: center;
+}
+.padding-inner {
+  padding: 8px 60px;
+  border: none;
+  background-color: #f1f1f1;
+}
+.card-button-1 {
+  margin-top: 20px;
+  border: none;
+  font-size: medium;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+  border-bottom-width: 4px;
+}
+.card-title {
+	font-weight: 700;
+    font-size: 26px;
+}
+/* ========= heart Shape ============== */
+input[type="checkbox"] {
+    display: none;
+}
+
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    display: inline-block;
+    font-size: 16px;
+}
+ 
+input[type="checkbox"] + label:before {
+    content: "\2661";
+    top: -11px;
+    left: -8px;
+	font-size: 40px;
+    border: 1px solid transparent;    
+    padding: 10px;
+    border-radius: 3px;
+    display: block;
+    position: absolute;
+	transition:  .5s ease;
+}
+ 
+
+ 
+input[type="checkbox"]:checked + label:before {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+ 
+input[type="checkbox"]:checked + label:after {
+    content: '\2764';
+    font-size: 40px;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+	color: red;
+	transition:  .5s ease;
+}
+.heart-shape{
+	position: absolute;
+    right: 3%;
+    top: -5%;
+}
+.carousel-control-next, .carousel-control-prev{
+	width: 5%;
+}
+
+.carousel-control-prev-icon{
+	background-image: url(/Images/leftvector.png);
+}
+.carousel-control-next-icon{
+	background-image: url(/Images/rightvector.png);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+     display: inline-block;
+	 width: 3rem;
+	 height: 5rem;
+	 background-repeat: no-repeat;
+	 color: black;
+	 background-position: 50%;
+	 background-size: 100% 100%;
+}
+.check-all-button{
+	border: 2px solid black;
+    padding: 12px 32px;
+    font-size: 4rem;
+    font-weight: 600;
+    background-color: transparent;
+}
+.checkalllatest{
+	margin-top: 8rem;
+	text-align: center;
+}
+ 
+
+/* ============ heart Shape end ============ */
+/* ======================== Sliding Cards End ===================================== */
+
+/* ======================== Shop By Categories ================================= */
+.section-3{
+	padding-inline: 12rem;
+	margin-top: 6rem;
+}
+.sectin3-heading h1{
+	font-size: 5rem;
+	font-weight: 700;
+}
+.catehories-maindiv{
+	margin-top: 4rem;
+	display: grid;
+  grid-template-columns: auto auto;
+  gap: 60px; 
+  padding: 10px;
+}
+.img1-div{
+	position: relative;
+	width: fit-content;
+
+}
+.img1-div img{
+	width: 100%;
+}
+.shop-category-button{
+	position: absolute;
+    top: 89%;
+    text-align: start;
+    right: 0px;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 3px 12px;
+}
+.check-browscategory-button{
+	border: 2px solid black;
+    padding: 12px 32px;
+    font-size: 4rem;
+    font-weight: 600;
+    background-color: transparent;
+}
+.browsallcategory{
+	margin-top: 8rem;
+	text-align: center;
+}
+/* ================== Shop By Category END ============================== */
+
+
+/* ====================== Section 4 Card Sliding ================================= */
+.section-4{
+  margin-top: 6rem;
+}
+.carousel-control-prev-icon{
+	background-image: url(/Images/leftvector.png);
+}
+.carousel-control-next-icon{
+	background-image: url(/Images/rightvector.png);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+     display: inline-block;
+	 width: 3rem;
+	 height: 5rem;
+	 background-repeat: no-repeat;
+	 color: black;
+	 background-position: 50%;
+	 background-size: 100% 100%;
+}
+/* ======================Section 4 End ==============================*/
+
+/* ==================== Footer Section ===================================== */
+.fa {
+	padding: 12px;
+    font-size: 24px;
+    width: 50px;
+    height: 52px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 8px;
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+.social-media-icon .fa-facebook {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-instagram {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-twitter {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-linkedin {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .links-About{
+	display: flex;
+	flex-direction: column;
+  }
+  .footer-main-div{
+	display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 153px;
+    background-color: #11575C;
+    margin-inline: 0px;
+    padding: 10px 63px;
+    margin-top: 6rem;
+  }
+.social-media-icon h2{
+	color: #D9D9D9;
+	font-size: 3rem;
+	font-weight: 900;
+}
+.social-media-icon p{
+	color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.company h2{
+	font-size: 28px;
+    font-weight: 600;
+    color: #D9D9D9;
+    line-height: 40px;
+}
+.links-About a{
+	color: white;
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: 300;
+}
+.carousel-inner>.item>img{
+  width: 100%;
+  height: 70rem;
+}
+.main-div{
+  display: none;
+}
+.mobile-navbar{
+  display: none;
+}
+ .cart{
+  display: none;
+ }
+ .fixed-div-section{
+  display: none;
+ }
+ .checkalllatest-mobile{
+  display: none;
+ }
+/* ==================== Footer Section End ====================================== */
+
+/* ==================== Normal Small Desktop Screen========================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navleft {
+    margin-left: 0rem;
+}
+nav a {
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.section-3 {
+  padding-inline: 6rem;
+  margin-top: 6rem;
+}
+.justify-content-around{
+  justify-content: center!important;
+}
+.shop-category-button{
+  top: 87%;
+}
+.footer-main-div{
+  gap: 52px;
+}
+}

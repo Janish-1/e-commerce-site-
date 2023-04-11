@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/signup.css') }}">
+    <title>Sign UP</title>
+</head>
+
+<body>
+    <section class="login-form-section">
+        <div class="imgcontainer">
+            <img src="{{ url_for('static',filename='/Images/loginpage/loginimage.png') }}" alt="Avatar" class="avatar">
+        </div>
+        <div class="login-form-div">
+            <h2 style="font-size: 35px;
+        color: #565656;
+        text-align: center;">SignUp</h2>
+            <form action="#" name="signup" method="POST">
+
+                <div class="container">
+                    <div class="username-div">
+                        <label for="uname">Username</label>
+                        <div class="username-icon">
+                            <input type="text" placeholder="Enter Your Username" name="uname" required>
+                        </div>
+                    </div>
+                    <div class="username-div">
+                        <label for="fname">Firstname</label>
+                        <div class="username-icon">
+                            <input type="text" placeholder="Enter Your first name" name="fname" required>
+                        </div>
+                    </div>
+                    <div class="username-div">
+                        <label for="lname">Lastname</label>
+                        <div class="username-icon">
+                            <input type="text" placeholder="Enter Your last name" name="lname" required>
+                        </div>
+                    </div>
+
+
+                    <div class="username-div">
+                        <label for="psw" style="padding-top: 1rem;">Password</label>
+                        <div class="username-icon">
+                            <input type="password" placeholder="Enter your password" name="psw" required>
+                            <span class="fa-solid fa-eye-slash"></span>
+                        </div>
+                    </div>
+
+                    <div class="username-div">
+                        <label for="psw-r" style="padding-top: 1rem;">Password</label>
+                        <div class="username-icon">
+                            <input type="password" placeholder="Re-type your password" name="psw-r" required>
+                            <span class="fa-solid fa-eye-slash"></span>
+                        </div>
+                    </div>
+
+                    <div class="container" style="text-align: center;">
+                        <label style="color: #9A9797;
+                              font-size: 24px;
+                                font-weight: 500;" >
+                            <input type="checkbox" name="remember"> Agree with <a style="color: #4A90E2;" href="">Terms &
+                                Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Login</button>
+            </form>
+            <div style="text-align: center; margin-top: 2rem; padding-bottom: 4rem;"><a href="/templogin" style="text-decoration: none;
+                color: #6C6C6C;
+                font-size: 24px;">I'm already a member</a></div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

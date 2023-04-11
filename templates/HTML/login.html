@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/login.css') }}">
+  <title>Login</title>
+</head>
+
+<body>
+  <section class="login-form-section">
+    <div class="imgcontainer">
+      <img src="{{ url_for('static',filename='/Images/loginpage/loginimage.png') }}" alt="Avatar" class="avatar">
+    </div>
+    <div class="login-form-div">
+      <h2 style="font-size: 35px;
+        color: #565656;
+        text-align: center;">Login</h2>
+      <form action="#" name="login" method="POST">
+
+
+        <div class="container">
+          <div class="username-div">
+            <label for="uname"><b>Username</b></label>
+            <div class="username-icon">
+              <input type="text" placeholder="username" id="uname" name="uname" required>
+              <span class="fa-regular fa-envelope"></span>
+            </div>
+          </div>
+          <div class="username-div">
+            <label for="psw" style="padding-top: 1rem;"><b>Password</b></label>
+            <div class="username-icon">
+              <input type="password" placeholder="Password" id="psw" name="psw" required>
+              <span class="fa-solid fa-eye-slash"></span>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="container">
+          <label style="color: #9A9797;
+        font-size: 20px;
+        font-weight: 600;">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <span class="psw">Forgot <a href="#" style="color: #9A9797; text-decoration: none;">password?</a></span>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="enline-div">
+        <div style="float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+    width: 44%;">
+          <hr />
+        </div>
+        <span class="end-line"> OR </span>
+        <div style="float: right;
+    margin-top: 12px;
+    width: 46%;">
+          <hr />
+        </div>
+      </div>
+      <h3 style="color: #9A9797;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;">Sign Up Using</h3>
+      <div class="social-icon">
+        <button class="sign-in-with-fb">Continue With Facebook</button>
+        <span class="fa-brands fa-facebook"></span>
+      </div>
+      <div class="social-icon-1">
+        <button class="sign-in-with-google">Continue With Google</button>
+        <img src="{{ url_for('static',filename='/Images/loginpage/logogoogle.png') }}" alt="">
+      </div>
+      <div class="social-icon">
+        <button class="sign-in-with-apple">Continue With Apple</button>
+        <span class="fa-brands fa-apple"></span>
+      </div>
+      <div class="signup-link">
+        <p>Don’t have an account? <a href="/signup">SignUp</a></p>
+      </div>
+    </div>
+
+
+  </section>
+
+</body>
+
+</html>

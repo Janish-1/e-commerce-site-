@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/Desktopcategory.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/responsive_css/respo-desktopcategory.css') }}">
+    <title>Categories</title>
+</head>
+
+<body>
+    <!-- ------------------------ Navbar For Mobile ------------------------- -->
+
+    <div class="mobile-navbar">
+        <i class="fa-sharp fa-solid fa-bars" id="cart-icon"></i>
+        <h2>Shoes</h2>
+        <img src="{{ url_for('static',filename='/Images/manimage.png') }}" alt="">
+    </div>
+
+
+    <div class="cart">
+        <div style="position: relative; border-bottom: 1px solid #C4C4C4;">
+            <h2 class="cart-title">Shoes</h2>
+
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <!-- ========= Drop-Down Menu ========================= -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">SHOP <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">For Men</a>
+                <a href="#about">For Women</a>
+                <a href="#contact">For Trends</a>
+            </div>
+        </div>
+        <div class="best-seller">BEST SELLER</div>
+
+        <div class="dropdown1">
+            <button onclick="myFunction1()" class="dropbtn1">GIFTING <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="#home">For Him</a>
+                <a href="#about">For Her</a>
+            </div>
+
+
+
+            <!-- cart close -->
+
+        </div>
+    </div>
+
+
+    <!-- ================================ Mobile END ========================== -->
+    <nav>
+        <div class="wrapper">
+            <div class="box">
+                <form id="searchBox">
+                    <input placeholder="Search Products & Brands.." type="text" />
+                    <input id="submitBtn" class="mainLoginInput" type="submit" value="SEARCH" />
+                </form>
+                <nav id="navArea">
+                    <ul class="navArea">
+                        <li class="circle1"></li>
+                        <span class="navleft">
+                            <li>
+                                <a href="/">HOME<i class="fa-solid fa-house fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="/cart">CART<i
+                                        class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
+                                    <span class="digit-count">4</span></a>
+                            </li>
+                            <li>
+                                <a href="/wishlist">WISHLIST<i
+                                        class="fa-solid fa-heart fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="/templogin">SignUp / Login<i
+                                        class="fa-solid fa-user fafaitem-space"></i></a>
+                            </li>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------Sliding Images Section ----------------------------------- -->
+    <section class="section-1">
+        <div class="container container_2">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active items-position">
+                        <div class="img-heading">
+                            <h1>This <br> season's <br> latest</h1>
+                        </div>
+                        <img src="{{ url_for('static',filename='/Images/desktopcategory2.jpg') }}" alt="Los Angeles">
+                    </div>
+
+                    <div class="item">
+                        <img src="{{ url_for('static',filename='/Images/slidedesk.jpg') }}" alt="Chicago">
+                    </div>
+
+                    <div class="item">
+                        <img src="{{ url_for('static',filename='/Images/slidedesk.jpg') }}" alt="New york">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="fa-solid fa-arrow-left fa-2x Arrow-position-1"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="fa-solid fa-arrow-right fa-2x Arrow-position-2"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- -------------- Sliding images Section End ------------------------------- -->
+
+    <!-- -------------------------Section 2 Start Details Of Shoes -------------------------- -->
+    <section class="section-3">
+        <div class="sectin3-heading">
+            <h1>The Trainer</h1>
+        </div>
+        <div class="catehories-maindiv">
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/desktopcategoryimg.jpg') }}" alt="">
+                <div class="shoes-details">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart1" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart1"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/desktopcategoryimg.jpg') }}" alt="">
+                <div class="shoes-details">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart2" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart2"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/desktopcategoryimg.jpg') }}" alt="">
+                <div class="shoes-details">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart3" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart3"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/desktopcategoryimg.jpg') }}" alt="">
+                <div class="shoes-details">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <button class="seemore-btn">See More<i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="browsallcategory"><button class="check-browscategory-button">MORE CATEGORIES</button></div>
+
+    </section>
+    <!------------------ Section-3 Image slider ---------------------------------- -->
+
+    <section class="section-2-cardSlider">
+        <div id="carouselExampleControls" class="carousel  slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="cards-items-wish">
+                            <div class="card  padding-inner" >
+                                <img src="{{ url_for('static',filename='/Images/category1 1.jpg') }}" alt="...">
+                                <button class="shop-category-button">The Trainer</button>
+                            </div>
+                        </div>
+                        <div class="cards-items-wish">
+                            <div class="card  padding-inner" >
+                                <img src="{{ url_for('static',filename='/Images/category4 1.jpg') }}" alt="...">
+                                <button class="shop-category-button">The Service Boot</button>
+                            </div>
+                        </div>
+                        <div class="cards-items-wish">
+                            <div class="card  padding-inner" >
+                                <img src="{{ url_for('static',filename='/Images/category3 1.jpg') }}" alt="...">
+                                <button class="shop-category-button">The Dress Sneaker</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------------- Carausel item 2---------------------------------- -->
+                <div class="carousel-item">
+                    <div class="card-wrapper container-sm d-flex  justify-content-around">
+                        <div class="cards-items-wish">
+                            <div class="card  padding-inner" >
+                                <img src="{{ url_for('static',filename='/Images/category1 1.jpg') }}" alt="...">
+                                <button class="shop-category-button">The Service Boot</button>
+                            </div>
+                        </div>
+                        <div class="card  padding-inner" >
+                            <img src="{{ url_for('static',filename='/Images/category4 1.jpg') }}" alt="...">
+                            <button class="shop-category-button">The Loafer</button>
+                        </div>
+                        <div class="card  padding-inner" >
+                            <img src="{{ url_for('static',filename='/Images/category3 1.jpg') }}" alt="...">
+                            <button class="shop-category-button">The Service Boot</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+
+    <!-- ============== Mobile Section View ===================== -->
+    <section class="mobile-section">
+        <div class="mob-sect-maindiv">
+            <div class="cards-items-wish">
+                <div class="card  padding-inner">
+                    <img src="{{ url_for('static',filename='/Images/category1 1.jpg') }}" alt="...">
+                    <button class="shop-category-button">The Loafer</button>
+                </div>
+            </div>
+            <div class="cards-items-wish">
+                <div class="card  padding-inner">
+                    <img src="{{ url_for('static',filename='/Images/category2 1.jpg') }}" alt="...">
+                    <button class="shop-category-button">The Service Boot</button>
+                </div>
+            </div>
+            <div class="cards-items-wish">
+                <div class="card  padding-inner">
+                    <img src="{{ url_for('static',filename='/Images/category3 1.jpg') }}" alt="...">
+                    <button class="shop-category-button">The Dress Sneaker</button>
+                </div>
+            </div>
+            <div class="cards-items-wish">
+                <div class="card  padding-inner">
+                    <img src="{{ url_for('static',filename='/Images/category4 1.jpg') }}" alt="...">
+                    <button class="shop-category-button">The Trainer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== Mobile Section View End ===================== -->
+     <!-- ================ Position Fixed Section ============================ -->
+
+   <section class="fixed-div-section">
+    <div class="icons">
+      <a href="/"><i class="fa-solid fa-house"></i></a>
+      <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+      <a href="/wishlist"><i class="fa-solid fa-heart"></i></a>
+      <a href="/cart"><i class="fa-solid fa-basket-shopping"></i><span class="digit-count1">4</span></a>
+
+    </div>
+   </section>
+
+   <!-- ================ Position Fixed Section End ========================= -->
+
+    <!-- ================== Footer Section =========================================== -->
+
+    <section class="footer-section">
+        <footer>
+            <div class="footer-main-div">
+                <div class="social-media-icon">
+                    <h2>FASHION</h2>
+                    <p>Complete your style with awesome <br> shoes from us.</p>
+                    <span>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </span>
+                </div>
+
+                <div class="company">
+                    <h2>Company</h2>
+                    <div class="links-About">
+                        <a href="">About</a>
+                        <a href="">Contact us</a>
+                        <a href="">Support</a>
+                        <a href="">Careers</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Quick Link</h2>
+                    <div class="links-About">
+                        <a href="">Share Location</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Legal</h2>
+                    <div class="links-About">
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static',filename='/JS/index.js') }}"></script>
+    <script src="{{ url_for('static',filename='/JS/wishlist.js') }}"></script>
+</body>
+
+</html>

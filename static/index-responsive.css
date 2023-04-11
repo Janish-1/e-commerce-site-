@@ -1,0 +1,503 @@
+@media (min-width: 340px) and (max-width: 480px) {
+  @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+  /*======================= Home section div Position Fixed ====================== */
+  
+  .icons{
+    gap: 6rem;
+    position: fixed;
+    bottom: 1%;
+    display: flex;
+    background-color: white;
+    padding: 12px;
+    width: -webkit-fill-available;
+    border-radius: 34px;
+    padding-inline: 2rem;
+  }
+  .fixed-div-section{
+    display: block;
+   }
+  .icons a{
+   font-size: 2em;
+   color: black;
+   position: relative;
+  }
+  .digit-count1{
+    font-size: 11px;
+    font-weight: 600;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    top: 3px;
+    right: -9px;
+    padding: 3px 7px;
+    background-color: black;
+  }
+  /* ======================= Position Fixed Section End ============================ */
+  .mobile-navbar i {
+    font-size: 34px;
+  }
+  .mobile-navbar {
+    display: flex;
+    align-items: center;
+    padding-inline: 4rem;
+  }
+  .mobile-navbar h2 {
+    margin-left: 4rem;
+  }
+  .mobile-navbar img {
+    padding: 4px;
+    border-radius: 50%;
+    margin-left: auto;
+    background-color: black;
+  }
+  .cart {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 88%;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 0 4px hsl(0deg 4% 15% / 10%);
+    transition: 0.3s;
+  }
+  .cart.active {
+    left: 0px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .cart-title {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 3rem;
+  }
+  .fa-xmark {
+    padding: 3px;
+    position: absolute;
+    top: 40px;
+    font-size: 26px;
+    right: 7px;
+  }
+  #close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  /* ============= Drop Down Menu ======================== */
+  .dropbtn {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: white;
+  }
+  .best-seller {
+    padding: 8px;
+    font-size: 16px;
+    padding-block: 2rem;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown-content {
+    display: none;
+    background-color: white;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+  }
+  .fa-chevron-down {
+    margin-left: 15rem;
+    font-size: 25px;
+    padding-left: 22px;
+    border-left: 1px solid #C4C4C4;;
+  }
+  .cart{
+    display: block;
+   }
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+  /* ================ Drop Down 2 =========================== */
+  /* ============= Drop Down Menu ======================== */
+  .dropbtn1 {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn1:hover,
+  .dropbtn1:focus {
+    background-color: white;
+  }
+
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown-content1 {
+    display: none;
+    background-color: white;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+  }
+    .dropbtn1 .fa-chevron-down {
+    margin-left: 13rem;
+    font-size: 25px;
+    padding-left: 22px;
+    border-left: 1px solid #C4C4C4;
+  }
+
+  .dropdown1 a:hover {
+    background-color: #ddd;
+  }
+
+  .show1 {
+    display: block;
+  }
+  /* ================== drop Down 2 End =================================== */
+  /* --------------- Navbar Menu For Mobile End -------------------------------------------- */
+  .container_2 {
+    position: relative;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .items-position {
+    position: relative;
+  }
+  .img-heading {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+  }
+  .img-heading h1 {
+    font-size: 3rem;
+    background: linear-gradient(115.65deg, #0b9173 25.13%, #1aabc6 54.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    font-weight: 600;
+  }
+  .Arrow-position-1 {
+    position: absolute;
+    top: 84%;
+    left: 20%;
+  }
+  .Arrow-position-2 {
+    position: absolute;
+    top: 84%;
+    right: 20%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .cards-items-wish {
+    position: relative;
+  }
+  /* ====================== Sliding Images End ============================ */
+
+  /* ======================= Sliding Cards Start ===================================== */
+
+  .section-2-cardSlider {
+    margin-top: 16rem;
+    display: none;
+  }
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 100%;
+  }
+  .cards-items-wish {
+    height: 100%;
+    padding: 4px;
+    text-align: center;
+  }
+  .padding-inner {
+    padding: 4px 28px;
+    border: none;
+    /* width: 17rem; */
+    background-color: #f1f1f1;
+  }
+
+  .card-button-1 {
+    margin-top: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+    border-bottom-width: 4px;
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .padding-inner img {
+    width: 100%;
+    height: 11rem;
+  }
+  /* ========= heart Shape ============== */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  input[type="checkbox"] + label:before {
+    content: "\2661";
+    top: -11px;
+    left: 5px;
+    font-size: 30px;
+    border: 1px solid transparent;
+    padding: 8px;
+    border-radius: 3px;
+    display: block;
+    position: absolute;
+    transition: 0.5s ease;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+
+  input[type="checkbox"]:checked + label:after {
+    content: "\2764";
+    font-size: 26px;
+    position: absolute;
+    top: 1px;
+    left: 12px;
+    color: red;
+    transition: 0.5s ease;
+  }
+  .heart-shape {
+    position: absolute;
+    right: 3%;
+    top: -5%;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 5%;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(/Images/leftvector.png);
+  }
+  .carousel-control-next-icon {
+    background-image: url(/Images/rightvector.png);
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 3rem;
+    height: 5rem;
+    background-repeat: no-repeat;
+    color: black;
+    background-position: 50%;
+    background-size: 100% 100%;
+  }
+  .check-all-button {
+    border: 2px solid black;
+    padding: 12px 32px;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: transparent;
+  }
+  .checkalllatest-mobile {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .main-div {
+    display: grid;
+    margin-top: 6rem;
+    grid-template-columns: auto auto;
+  }
+
+  /* ============ heart Shape end ============ */
+  /* ======================== Sliding Cards End ===================================== */
+
+  /* ======================== Shop By Categories ================================= */
+  .section-3 {
+    padding-inline: 1rem;
+    margin-top: 6rem;
+  }
+  .sectin3-heading h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .carousel-inner > .item > img {
+    width: 100%;
+    height: 30rem;
+  }
+  .catehories-maindiv {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .img1-div {
+    position: relative;
+    width: fit-content;
+  }
+  .img1-div img {
+    width: 100%;
+  }
+  .shop-category-button {
+    position: absolute;
+    top: 81%;
+    font-size: 14px;
+  }
+  .check-browscategory-button {
+    border: 2px solid black;
+    padding: 2px 27px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+  }
+  .browsallcategory {
+    margin-top: 8rem;
+    text-align: center;
+  }
+  /* ================== Shop By Category END ============================== */
+
+  /* ====================== Section 4 Card Sliding ================================= */
+  .section-4 {
+    margin-top: 6rem;
+    display: none;
+  }
+  /* ======================Section 4 End ==============================*/
+
+  /* ==================== Footer Section ===================================== */
+  .fa {
+    padding: 13px;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .social-media-icon .fa-facebook {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-instagram {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-twitter {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-linkedin {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .links-About {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-main-div {
+    display: grid;
+    padding-bottom: 10rem;
+    grid-template-columns: auto;
+    gap: 10px;
+    background-color: #11575c;
+    margin-inline: 0px;
+    padding: 10px 20px;
+    margin-top: 6rem;
+  }
+  .social-media-icon h2 {
+    color: #d9d9d9;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .social-media-icon p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+
+  .company h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #d9d9d9;
+    line-height: 20px;
+  }
+  .links-About a {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+  .checkalllatest-mobile{
+    display: block;
+  }
+
+  /* ==================== Footer Section End ====================================== */
+}

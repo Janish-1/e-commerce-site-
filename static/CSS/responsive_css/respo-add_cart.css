@@ -1,0 +1,552 @@
+@media (min-width: 340px) and (max-width: 480px) {
+
+     /*======================= Home section div Position Fixed ====================== */
+  
+  .icons{
+    gap: 3rem;
+    position: fixed;
+    bottom: 1%;
+    display: flex;
+    background-color: white;
+    padding: 12px;
+    width: -webkit-fill-available;
+    border-radius: 34px;
+    padding-inline: 2rem;
+  }
+  .fixed-div-section{
+    display: block;
+   }
+  .icons a{
+   font-size: 2em;
+   color: black;
+   position: relative;
+  }
+  .digit-count1{
+    font-size: 11px;
+    font-weight: 600;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    top: 3px;
+    right: -9px;
+    padding: 3px 7px;
+    background-color: black;
+  }
+  /* ======================= Position Fixed Section End ============================ */
+  .mobile-navbar i {
+    font-size: 34px;
+  }
+  .mobile-navbar {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 2rem;
+  }
+  .mobile-navbar h2 {
+    margin-left: 4rem;
+  }
+  .mobile-navbar img {
+    padding: 4px;
+    border-radius: 50%;
+    margin-left: auto;
+    background-color: black;
+  }
+  .cart {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 88%;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 0 4px hsl(0deg 4% 15% / 10%);
+    transition: 0.3s;
+  }
+  .cart.active {
+    left: 0px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .cart-title {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 3rem;
+  }
+  .fa-xmark {
+    padding: 3px;
+    position: absolute;
+    top: 40px;
+    font-size: 26px;
+    right: 7px;
+  }
+  #close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  /* ============= Drop Down Menu ======================== */
+  .dropbtn {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: white;
+  }
+  .best-seller {
+    padding: 8px;
+    font-size: 16px;
+    padding-block: 2rem;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown-content {
+    display: none;
+    background-color: white;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+  }
+  .fa-chevron-down {
+    margin-left: 9rem;
+    font-size: 25px;
+    padding-left: 22px;
+    border-left: 1px solid #C4C4C4;;
+  }
+  .cart{
+    display: block;
+   }
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+  /* ================ Drop Down 2 =========================== */
+  /* ============= Drop Down Menu ======================== */
+  .dropbtn1 {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn1:hover,
+  .dropbtn1:focus {
+    background-color: white;
+  }
+
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown-content1 {
+    display: none;
+    background-color: white;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+  }
+    .dropbtn1 .fa-chevron-down {
+    margin-left: 8rem;
+    font-size: 25px;
+    padding-left: 22px;
+    border-left: 1px solid #C4C4C4;
+  }
+
+  .dropdown1 a:hover {
+    background-color: #ddd;
+  }
+
+  .show1 {
+    display: block;
+  }
+  /* ================== drop Down 2 End =================================== */
+  /* --------------- Navbar Menu For Mobile End -------------------------------------------- */
+
+/* ============================== Section 2 Start Add Cart ============================ */
+
+.Adresses-save {
+    display: flex;
+    gap: 40px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  input[type="text"] {
+    padding: 6px 10px;
+    font-size: 10px;
+    border-radius: 24px;
+    width: 50%;
+    color: #436ae5;
+    font-weight: 800;
+    box-sizing: border-box;
+    border: 2px solid #6c6c6c;
+  }
+  .Adresses-save ::placeholder {
+    color: #436ae5;
+  }
+  .section-3 {
+    padding-inline: 12rem;
+    margin-top: 6rem;
+  }
+  .sectin3-heading h1 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .catehories-maindiv {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 32px;
+  }
+  .img1-div {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    background-color: white;
+    flex-direction: row;
+  }
+  .img1-div img {
+    width: 40%;
+    height: 100%;
+  }
+  .shop-category-button {
+    position: absolute;
+    top: 0%;
+    text-align: start;
+    right: 0px;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 3px 12px;
+  }
+  .check-browscategory-button {
+    border: 2px solid black;
+    padding: 12px 32px;
+    font-size: 4rem;
+    font-weight: 600;
+    background-color: transparent;
+  }
+  .browsallcategory {
+    margin-top: 12rem;
+    text-align: center;
+  }
+  
+  /* ============================== Heart Shape ================================= */
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"] + label:before {
+    content: "\2661";
+    top: -14px;
+    left: -11px;
+    font-size: 22px;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    position: absolute;
+    transition: 0.5s ease;
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+  
+  input[type="checkbox"]:checked + label:after {
+    content: "\2764";
+    font-size: 22px;
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    color: red;
+    transition: 0.5s ease;
+  }
+  .heart-shape {
+    position: absolute;
+    left: 32%;
+    top: 2%;
+  }
+  /* ================================ heart Shape END ======================================= */
+  
+  .shoes-details {
+    font-weight: 600;
+    margin-top: 12px;
+    word-spacing: 2px;
+    font-size: 8px;
+    line-height: 17px;
+  }
+  .checked {
+    color: orange;
+  }
+  .addtocart-btn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    margin-right: 16rem;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #60b72a;
+    padding: 6px 32px;
+  }
+  .remove-btn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-right: 16rem;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #2fa7c0;
+    padding: 6px 60px;
+  }
+  .Addtocart-remove {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .date-added {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    word-spacing: 4px;
+  }
+  
+  .end-line {
+    width: auto;
+    font-size: 20px;
+    color: #8a8a8a;
+  }
+  .enline-div {
+    margin-top: 4rem;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td,
+  th {
+    text-align: left;
+    font-weight: 500;
+    padding: 12px;
+    border-style: none;
+  }
+  .main-div {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .add-cart-div {
+    flex: 1;
+  }
+  .price-details-div {
+    width: -webkit-fill-available;
+    line-height: 43px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    /* margin: auto; */
+    background-color: white;
+    padding: 12px 12px;
+  }
+  .section-1 {
+    padding-inline: 1rem;
+    margin-top: 3rem;
+  }
+  .place-order-div {
+    margin-top: 6px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    background-color: white;
+    padding: 8px 18px;
+    direction: rtl;
+  }
+  .place-order-btn {
+    float: right;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    background-color: #f04747;
+  }
+  .secure-payment {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .secure-payment p {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #6c6c6c;
+  }
+  .product-color{
+    color: #6C6C6C;
+    font-size: 12px
+  }
+  .span-strike{
+    display: inline-flex;
+    color: #6C6C6C;
+  }
+  .product-price{
+    color: #11575C;
+    font-size: 15px;
+  }
+  .discount-per{
+    font-size: 13px;
+     color: #34A853;
+  }
+  .save-for-later{
+    display: inline-flex; 
+    gap: 30px;
+     margin-top: 1rem;
+  
+  }
+  .Adresses-save h2{
+    font-size: 12px;
+  }
+  /* ----------------------------------------------------end */
+  
+  
+  /* ================== Shop By Category END ============================== */
+  
+  /* ============================== Section 2 Start Add Cart End ========================== */
+   /* ==================== Footer Section ===================================== */
+   .fa {
+    padding: 4px;
+    font-size: 11px;
+    width: 4px;
+    height: 4px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .social-media-icon .fa-facebook {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-instagram {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-twitter {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-linkedin {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .links-About {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-main-div {
+    display: grid;
+    padding-bottom: 10rem;
+    grid-template-columns: auto;
+    gap: 10px;
+    background-color: #11575c;
+    margin-inline: 0px;
+    padding: 10px 20px;
+    margin-top: 6rem;
+  }
+  .social-media-icon h2 {
+    color: #d9d9d9;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .social-media-icon p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+
+  .company h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #d9d9d9;
+    line-height: 20px;
+  }
+  .links-About a {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+}

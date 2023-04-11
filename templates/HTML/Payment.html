@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/payment.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/responsive_css/respo-payment.css') }}">
+    <title>Payment</title>
+</head>
+
+<body>
+    <!-- ------------------------ Navbar For Mobile ------------------------- -->
+
+    <div class="mobile-navbar">
+        <i class="fa-sharp fa-solid fa-bars" id="cart-icon"></i>
+        <h2>Shoes</h2>
+        <img src="{{ url_for('static',filename='/Images/manimage.png') }}" alt="">
+    </div>
+
+
+    <div class="cart">
+        <div style="position: relative; border-bottom: 1px solid #C4C4C4;">
+            <h2 class="cart-title">Shoes</h2>
+
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <!-- ========= Drop-Down Menu ========================= -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">SHOP <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">For Men</a>
+                <a href="#about">For Women</a>
+                <a href="#contact">For Trends</a>
+            </div>
+        </div>
+        <div class="best-seller">BEST SELLER</div>
+
+        <div class="dropdown1">
+            <button onclick="myFunction1()" class="dropbtn1">GIFTING <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="#home">For Him</a>
+                <a href="#about">For Her</a>
+            </div>
+
+
+
+            <!-- cart close -->
+
+        </div>
+    </div>
+
+
+    <!-- ================================ Mobile END ========================== -->
+    <nav>
+        <div class="wrapper">
+            <div class="box">
+                <form id="searchBox">
+                    <input placeholder="Search Products & Brands.." type="text" />
+                    <input id="submitBtn" class="mainLoginInput" type="submit" value="SEARCH" />
+                </form>
+                <nav id="navArea">
+                    <ul class="navArea">
+                        <li class="circle1"></li>
+                        <span class="navleft">
+                            <li>
+                                <a href="/">HOME<i class="fa-solid fa-house fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="/cart">CART<i
+                                        class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
+                                    <span class="digit-count">4</span></a>
+                            </li>
+                            <li>
+                                <a href="/wishlist">WISHLIST<i
+                                        class="fa-solid fa-heart fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">USERNAME<i class="fa-solid fa-user fafaitem-space"></i></a>
+                            </li>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <!-- ======================== Navbar END ========================================= -->
+    <!-- ================= Payment Section Start ============================== -->
+    <section class="payment-section">
+        <form action="" method="get" class="payment-form">
+            <div class="payment-maindiv">
+                <h1 class="payment-h1tag">SELECT YOUR PAYMENT METHOD</h1>
+                <h3 class="payment-h3tag">Your Available Balance</h3>
+
+
+                <div class="apply-btn-div1"> <input type="text" placeholder="Enter Voucher Code"><button
+                        class="apply-btn">Apply</button></div>
+                <h2 class="h2-anotherpayment">Another Payment method</h2>
+                <input type="radio" id="payment" name="fav_language" value="HTML">
+                  <label for="payment">Pay with Debit/Credit/ATM Cards</label><br>
+                <p class="rbi-guidelines">You can save your cards as per new RBI
+                    guidelines. <a href="" style="text-decoration: none; color: #4A90E2;"> Learn More </a></p>
+                <div class="bank-imgages">
+                    <img src="{{ url_for('static',filename='/Images/payment/visa.jpg') }}" alt="">
+                    <img src="{{ url_for('static',filename='/Images/payment/rupay.jpg') }}" alt="">
+                    <img src="{{ url_for('static',filename='/Images/payment/mastercard.jpg') }}" alt="">
+                    <img src="{{ url_for('static',filename='/Images/payment/maestro.jpg') }}" alt="">
+                    <img src="{{ url_for('static',filename='/Images/payment/Sbi.jpg') }}" alt="">
+                    <img src="{{ url_for('static',filename='/Images/payment/punjabnational.jpg') }}" alt="">
+                </div>
+                <input type="radio" id="netbanking" name="fav_language" value="HTML">
+                  <label for="netbanking">Net Banking</label><br>
+                <select id="netbanking" class="netbanking" name="netbanking">
+                    <option value="">Choose An Option <i class="arrow down"></i></option>
+                    <option value="sbi"><a href="">State bank of india</a></option>
+                    <option value="pnb"><a href="">Punjab national bank</a></option>
+                    <option value="bod"><a href="">Bank of Baroda</a></option>
+                    <option value="cbi"><a href="">Central Bank Of India</a></option>
+                    <option value="hdfc"><a href="">HDFC</a></option>
+                </select> <br>
+                <input type="radio" id="otherupi" name="fav_language" value="HTML">
+                  <label for="otherupi">Other UPI Apps</label><br>
+                <input type="radio" id="Emi" name="fav_language" value="HTML">
+                  <label for="Emi">EMI</label><br>
+                <div class="cash-delivery"><input type="radio" id="cashon" name="fav_language" value="HTML">
+                      <label for="cashon">Cash On Delivery/Pay On Delivery</label><br>
+                    <p class="cashon-delivery">Scan & Pay using
+                        app. Cash, UPI, Cards
+                        also accepted. <a href="" style="text-decoration: none; color: #4A90E2;"> Know more.</a></p>
+                </div>
+            </div>
+            <div class="place-order-div">
+                <button class="place-order-btn">Use this payment method</button>
+            </div>
+        </form>
+
+    </section>
+    <!-- ================ Position Fixed Section ============================ -->
+
+    <section class="fixed-div-section">
+        <div class="icons">
+            <a href="/"><i class="fa-solid fa-house"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+            <a href="/wishlist"><i class="fa-solid fa-heart"></i></a>
+            <a href="/cart"><i class="fa-solid fa-basket-shopping"></i><span
+                    class="digit-count1">4</span></a>
+
+        </div>
+    </section>
+
+    <!-- ================ Position Fixed Section End ========================= -->
+
+    <!-- ======================= Footer Section Start =========================================== -->
+    <section class="footer-section">
+        <footer>
+            <div class="footer-main-div">
+                <div class="social-media-icon">
+                    <h2>FASHION</h2>
+                    <p>Complete your style with awesome <br> shoes from us.</p>
+                    <span>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </span>
+                </div>
+
+                <div class="company">
+                    <h2>Company</h2>
+                    <div class="links-About">
+                        <a href="">About</a>
+                        <a href="">Contact us</a>
+                        <a href="">Support</a>
+                        <a href="">Careers</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Quick Link</h2>
+                    <div class="links-About">
+                        <a href="">Share Location</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Legal</h2>
+                    <div class="links-About">
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- ======================= Footer Section End =========================================== -->
+    <script src="{{ url_for('static',filename='/JS/wishlist.js') }}"></script>
+</body>
+
+</html>

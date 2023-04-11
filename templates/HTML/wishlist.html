@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/wishlist.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/responsive_css/respo-wishlist.css') }}">
+
+    <title>Wishlist</title>
+</head>
+
+<body>
+     <!-- ------------------------ Navbar For Mobile ------------------------- -->
+
+     <div class="mobile-navbar">
+        <i class="fa-sharp fa-solid fa-bars" id="cart-icon"></i>
+        <h2>Shoes</h2>
+        <img src="{{ url_for('static',filename='/Images/manimage.png') }}" alt="">
+    </div>
+
+
+    <div class="cart">
+        <div style="position: relative; border-bottom: 1px solid #C4C4C4;">
+            <h2 class="cart-title">Shoes</h2>
+
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <!-- ========= Drop-Down Menu ========================= -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">SHOP <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">For Men</a>
+                <a href="#about">For Women</a>
+                <a href="#contact">For Trends</a>
+            </div>
+        </div>
+        <div class="best-seller">BEST SELLER</div>
+
+        <div class="dropdown1">
+            <button onclick="myFunction1()" class="dropbtn1">GIFTING <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="#home">For Him</a>
+                <a href="#about">For Her</a>
+            </div>
+
+
+
+            <!-- cart close -->
+
+        </div>
+    </div>
+
+    <div class="wishlist-searchbar">
+        <i class="fa-sharp fa-solid fa-magnifying-glass mag-glass"></i>
+        <input type="search" placeholder="Search your item here...">
+    </div>
+
+
+    <!-- ================================ Mobile END ========================== -->
+    <nav>
+        <div class="wrapper">
+            <div class="box">
+                <form id="searchBox">
+                    <input placeholder="Search Products & Brands.." type="text" />
+                    <input id="submitBtn" class="mainLoginInput" type="submit" value="SEARCH" />
+                </form>
+                <nav id="navArea">
+                    <ul class="navArea">
+                        <li class="circle1"></li>
+                        <span class="navleft">
+                            <li>
+                                <a href="/">HOME<i class="fa-solid fa-house fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="/cart">CART<i
+                                        class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
+                                    <span class="digit-count">4</span></a>
+                            </li>
+                            <li>
+                                <a href="/wishlist">WISHLIST<i
+                                        class="fa-solid fa-heart fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="/templogin">SignUp / Login<i
+                                        class="fa-solid fa-user fafaitem-space"></i></a>
+                            </li>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <!-- ======================== Navbar END========================================= -->
+
+    <section class="section-3">
+        <div class="sectin3-heading">
+            <h1>My Wishlist</h1>
+        </div>
+        <div class="catehories-maindiv">
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart11" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart11"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/wishlist_images/wishlistimage.jpg') }}" alt="">
+                <div class="cart-detail">
+                    <div class="shoes-details">
+                        <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                                class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                            <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                            LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                        </p>
+                    </div>
+                    <div class="cart-add88">
+                        <p class="Addtocart-remove">
+                        <p class="date-added">item added on 1 octomber 2021</p>
+                        <button class="addtocart-btn">ADD TO CART</button><br>
+                        <button class="remove-btn">REMOVE</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart12" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart12"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/wishlist_images/wishlistimage.jpg') }}" alt="">
+                <div class="cart-detail">
+                    <div class="shoes-details">
+                        <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                                class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                            <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                            LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                        </p>
+                    </div>
+                    <div class="cart-add88">
+                        <p class="Addtocart-remove">
+                        <p class="date-added">item added on 1 octomber 2021</p>
+                        <button class="addtocart-btn">ADD TO CART</button><br>
+                        <button class="remove-btn">REMOVE</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart13" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart13"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/wishlist_images/wishlistimage.jpg') }}" alt="">
+                <div class="cart-detail">
+                    <div class="shoes-details">
+                        <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                                class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                            <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                            LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                        </p>
+                    </div>
+                    <div class="cart-add88">
+                        <p class="Addtocart-remove">
+                        <p class="date-added">item added on 1 octomber 2021</p>
+                        <button class="addtocart-btn">ADD TO CART</button><br>
+                        <button class="remove-btn">REMOVE</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img1-div">
+                <div class="heart-shape">
+                    <input id="heart14" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart14"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/wishlist_images/wishlistimage.jpg') }}" alt="">
+                <div class="cart-detail">
+                    <div class="shoes-details">
+                        <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                                class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                            <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                            LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                        </p>
+                    </div>
+                    <div class="cart-add88">
+                        <p class="Addtocart-remove">
+                        <p class="date-added">item added on 1 octomber 2021</p>
+                        <button class="addtocart-btn">ADD TO CART</button><br>
+                        <button class="remove-btn">REMOVE</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== Wishlist Section end ============================== -->
+
+    <!-- ========================= End Line =================================================  -->
+    <div class="enline-div">
+        <div class="enline-div1" >
+            <hr />
+        </div>
+        <span class="end-line"> END OF LIST </span>
+        <div class="enline-div2" >
+            <hr />
+        </div>
+    </div>
+    <!--=========================== End Line Section End ==========================  -->
+
+    
+    <!-- ==================================== Wish list end  ========================== -->
+
+    <!-- ================= My Account Section ======================================= -->
+
+    <section class="my-account-section">
+        <div class="main-div">
+            <div class="maindivh2">
+                <h2>My Account</h2>
+            </div>
+            <div class="divide-three">
+                <div class="subsection-1">
+                    <p class="icon-text"><img src="{{ url_for('static',filename='/Images/wishlist_images/uservector.png') }}" alt="img"><span
+                            class="user-spn">USERNAME <br> GMAIL</span></p>
+                    <p class="clickable-link">You might be logged in on <br>other devices.to sign out <br> from all
+                        devices <br> <a href="">CLICK HERE</a></p>
+                </div>
+                <div class="subsection-2">
+                    <div class="icon-text2"><img src="{{ url_for('static',filename='/Images/wishlist_images/filevector.png') }}" alt="img">
+                        <h2>ORDERS</h2>
+                    </div>
+                    <h3>Orders</h3>
+
+                    <div class="icon-text3"><img src="{{ url_for('static',filename='/Images/wishlist_images/paymentvector.png') }}" alt="img">
+                        <h2>PAYMENTS</h2>
+                    </div>
+                    <h3>E-gift Voucher <br>balance</h3>
+                </div>
+                <div class="subsection-3">
+                    <div class="icon-text4"><img src="{{ url_for('static',filename='/Images/wishlist_images/userlastvector.png') }}" alt="img">
+                        <h2>PROFILE</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <h3>Saved Adresses</h3>
+                        </li>
+                        <li>
+                            <h3>Saved Cards</h3>
+                        </li>
+                        <li>
+                            <h3>Change Password</h3>
+                        </li>
+                        <a href="" style="color: #EA4335;">
+                            <li>
+                                <h3>Wishlist</h3>
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== My Account Section END ======================================== -->
+
+    <section class="section-33">
+        <div class="sectin3-heading1">
+            <h1>More items to explore</h1>
+        </div>
+        <div class="catehories-maindiv1">
+            <div class="img1-div1">
+                <div class="heart-shape1">
+                    <input id="heart" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/desktopcategoryimg.jpg') }}" alt="">
+                <div class="shoes-details1">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+            <div class="img1-div1">
+                <div class="heart-shape1">
+                    <input id="heart" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/desktopcategoryimg.jpg') }}" alt="">
+                <div class="shoes-details1">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+            <div class="img1-div1">
+                <div class="heart-shape1">
+                    <input id="heart" type="checkbox" />
+                    <!-- <label for="heart">❤</label> -->
+                    <label for="heart"></label>
+                </div>
+                <img src="{{ url_for('static',filename='/Images/desktopcategoryimg.jpg') }}" alt="">
+                <div class="shoes-details1">
+                    <p> ASIAN MENS WATERPROOF-051 <br> WHITE SPORTS SHOES - 10 UK <br> (WATERPROOF-05) <br> <span
+                            class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half-full checked"></span> 1,562 <br> DEAL OF THE DAY <br>
+                        <span style="color: #EA4335;">&#x20B9;649.00</span><br>
+                        LIST:&#x20B9;<strike>999.00</strike> (35% OFF)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+     <!-- ================ Position Fixed Section ============================ -->
+
+   <section class="fixed-div-section">
+    <div class="icons">
+      <a href="/"><i class="fa-solid fa-house"></i></a>
+      <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+      <a href="/wishlist"><i class="fa-solid fa-heart"></i></a>
+      <a href="/cart"><i class="fa-solid fa-basket-shopping"></i><span class="digit-count1">4</span></a>
+
+    </div>
+   </section>
+
+   <!-- ================ Position Fixed Section End ========================= -->
+
+    <!-- ======================= Footer Section Start ========================== -->
+    <section class="footer-section">
+        <footer>
+            <div class="footer-main-div">
+                <div class="social-media-icon">
+                    <h2>FASHION</h2>
+                    <p>Complete your style with awesome <br> shoes from us.</p>
+                    <span>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </span>
+                </div>
+
+                <div class="company">
+                    <h2>Company</h2>
+                    <div class="links-About">
+                        <a href="">About</a>
+                        <a href="">Contact us</a>
+                        <a href="">Support</a>
+                        <a href="">Careers</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Quick Link</h2>
+                    <div class="links-About">
+                        <a href="">Share Location</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Legal</h2>
+                    <div class="links-About">
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- ======================= Footer Section Start =========================================== -->
+
+    <script src="{{ url_for('static',filename='/index.html') }}"></script>
+    <script src="{{ url_for('static',filename='/JS/wishlist.js') }}"></script>
+</body>
+
+</html>

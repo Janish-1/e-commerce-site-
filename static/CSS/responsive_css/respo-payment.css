@@ -1,0 +1,404 @@
+
+@media (min-width: 340px) and (max-width: 480px) {
+     /*======================= Home section div Position Fixed ====================== */
+  
+  .icons{
+    gap: 3rem;
+    position: fixed;
+    bottom: 1%;
+    display: flex;
+    background-color: white;
+    padding: 12px;
+    width: -webkit-fill-available;
+    border-radius: 34px;
+    padding-inline: 2rem;
+  }
+  .fixed-div-section{
+    display: block;
+   }
+  .icons a{
+   font-size: 2em;
+   color: black;
+   position: relative;
+  }
+  .digit-count1{
+    font-size: 11px;
+    font-weight: 600;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    top: 3px;
+    right: -9px;
+    padding: 3px 7px;
+    background-color: black;
+  }
+  /* ======================= Position Fixed Section End ============================ */
+  .mobile-navbar i {
+    font-size: 34px;
+  }
+  .mobile-navbar {
+    display: flex;
+    align-items: center;
+    padding-inline: 4rem;
+    margin-top: 1rem;
+  }
+  .mobile-navbar h2 {
+    margin-left: 4rem;
+  }
+  .mobile-navbar img {
+    padding: 4px;
+    border-radius: 50%;
+    margin-left: auto;
+    background-color: black;
+  }
+  .cart {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 88%;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 0 4px hsl(0deg 4% 15% / 10%);
+    transition: 0.3s;
+  }
+  .cart.active {
+    left: 0px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .cart-title {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 3rem;
+  }
+  .fa-xmark {
+    padding: 3px;
+    position: absolute;
+    top: 40px;
+    font-size: 26px;
+    right: 7px;
+  }
+  #close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  /* ============= Drop Down Menu ======================== */
+  .dropbtn {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: white;
+  }
+  .best-seller {
+    padding: 8px;
+    font-size: 16px;
+    padding-block: 2rem;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown-content {
+    display: none;
+    background-color: white;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+  }
+  .fa-chevron-down {
+    margin-left: 9rem;
+    font-size: 25px;
+    padding-left: 22px;
+    border-left: 1px solid #C4C4C4;;
+  }
+  .cart{
+    display: block;
+   }
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+  /* ================ Drop Down 2 =========================== */
+  /* ============= Drop Down Menu ======================== */
+  .dropbtn1 {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn1:hover,
+  .dropbtn1:focus {
+    background-color: white;
+  }
+
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  .dropdown-content1 {
+    display: none;
+    background-color: white;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+  }
+    .dropbtn1 .fa-chevron-down {
+    margin-left: 8rem;
+    font-size: 25px;
+    padding-left: 22px;
+    border-left: 1px solid #C4C4C4;
+  }
+
+  .dropdown1 a:hover {
+    background-color: #ddd;
+  }
+
+  .show1 {
+    display: block;
+  }
+  /* ================== drop Down 2 End =================================== */
+  /* --------------- Navbar Menu For Mobile End -------------------------------------------- */
+/*  =========================== Payment Section Start ============================ */
+
+.apply-btn {
+    padding: 6px 6px;
+    background-color: #565656;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  .payment-form input {
+    border: 1px solid #b3b3b3;
+    padding: 6px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+  }
+  .bank-imgages {
+    display: flex;
+    gap: 12px;
+    padding-top: 15px;
+    padding-left: 4px;
+  }
+  .bank-imgages img {
+    height: 17px;
+  }
+  .netbanking {
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    padding: 8px 8px;
+    color: #565656;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 4rem;
+  }
+  .cash-delivery {
+    padding: 8px 4px;
+    background-color: rgba(74, 144, 226, 0.21);
+    border: 1px solid #4a90e2;
+    width: fit-content;
+    padding-left: 0rem;
+    line-height: 18px;
+  }
+  .payment-maindiv {
+    background-color: #ffffff;
+    line-height: 37px;
+    word-spacing: 2px;
+    padding-bottom: 2rem;
+    font-size: inherit;
+    padding-top: 28px;
+    padding-inline: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .payment-section {
+    padding-inline: 1rem;
+    margin-top: 3rem;
+  }
+  input[type="radio" i] {
+    margin-left: 20px;
+    accent-color: #4a90e2;
+    width: 15px;
+    height: 15px;
+  }
+  /* --------------------------------new */
+.payment-h1tag {
+    font-weight: 700;
+    color: #ea4335;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .payment-h3tag {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .apply-btn-div1 {
+    display: flex;
+    padding-left: 1rem;
+  }
+  .h2-anotherpayment {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .rbi-guidelines {
+    color: #9a9797;
+    font-size: 13px;
+    padding-left: 1rem;
+    line-height: normal;
+    font-weight: 600;
+  }
+  .cashon-delivery {
+    color: #9a9797;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 1rem;
+  }
+  
+  /* --------------------------------- end */
+  
+  /* ========================== Payment Section End =================================== */
+  
+  .place-order-div {
+    margin-top: 6px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    background-color: white;
+    padding: 8px 18px;
+    direction: rtl;
+  }
+  .place-order-btn {
+    float: right;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    background-color: #f04747;
+  }
+  /* ==================== Footer Section ===================================== */
+  .fa {
+    padding: 8px;
+    font-size: 12px;
+    width: 4px;
+    height: 4px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .social-media-icon .fa-facebook {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-instagram {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-twitter {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .social-media-icon .fa-linkedin {
+    background: white;
+    border-radius: 15px;
+    color: #11575c;
+  }
+  .links-About {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-main-div {
+    display: grid;
+    padding-bottom: 10rem;
+    grid-template-columns: auto;
+    gap: 10px;
+    background-color: #11575c;
+    margin-inline: 0px;
+    padding: 10px 20px;
+    margin-top: 6rem;
+  }
+  .social-media-icon h2 {
+    color: #d9d9d9;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .social-media-icon p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+
+  .company h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #d9d9d9;
+    line-height: 20px;
+  }
+  .links-About a {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+}

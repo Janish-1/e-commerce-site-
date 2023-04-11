@@ -1,0 +1,2 @@
+env\Scripts\Activate (In Current Directory)
+python app.py (In Current Directory)

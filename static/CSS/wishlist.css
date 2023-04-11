@@ -1,0 +1,714 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/Images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.digit-count {
+    font-size: 9px;
+    font-weight: 600;
+    position: relative;
+    border-radius: 50%;
+    color: black;
+    border: 2px solid black;
+    top: -6px;
+    left: -10px;
+    padding: 3px;
+    background-color: white;
+  }
+  /* ============================ Nav Bar Start ================================================== */
+  .mainLoginInput {
+    height: 40px;
+    padding: 0px;
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  
+  .mainLoginInput::-webkit-input-placeholder {
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    color: hsl(9, 40%, 60%);
+  }
+  
+  .mainLoginInput::-moz-placeholder {
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    color: hsl(9, 40%, 60%);
+  }
+  
+  .mainLoginInput:-ms-input-placeholder {
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+    color: hsl(9, 40%, 60%);
+  }
+  /* =============================== Searchbar icon placeholder ====================== */
+  .navArea .circle1 {
+    border-radius: 50%;
+    margin-left: 4rem;
+    padding: 27px;
+    margin-bottom: -19px;
+    background-color: #fff;
+  }
+  .navleft {
+    margin-left: 12rem;
+  }
+  .box {
+    width: 100%;
+    background: #333;
+    display: inline-block;
+  }
+  #icon {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  #icon a {
+    text-decoration: none;
+  }
+  nav {
+    display: none;
+  }
+  nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0;
+    background-color: #11575c;
+  }
+  nav li {
+    display: block;
+    font-size: 16px;
+    color: white;
+    margin: 0 5px;
+  }
+  ul.navArea > li > a {
+    color: #fff;
+  }
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 140px;
+  }
+  ul.navArea li ul.sub-menu {
+    display: none;
+    position: absolute;
+  }
+  ul.navArea li {
+    position: relative;
+  }
+  ul.navArea li:hover ul.sub-menu {
+    display: block;
+  }
+  .sub-menu li {
+    margin-left: 0 !important;
+  }
+  ul.sub-menu > li > a {
+    color: #fff;
+  }
+  ul.navArea > li > a:hover,
+  ul.sub-menu > li > a:hover {
+    color: deepskyblue;
+  }
+  #searchBox {
+    display: inline-block;
+    padding-top: 4px;
+    padding-right: 42px;
+    float: right;
+  }
+  #searchBox input {
+    width: 300px;
+    float: left;
+    border-radius: 2px 0 0 2px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+  }
+  #submitBtn {
+    width: auto !important;
+    float: right;
+    border-radius: 0 5px 5px 0;
+    background: #565656;
+    font-size: 13px;
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  #submitBtn .search-fa-icon {
+    padding: 0px;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    nav ul {
+      width: 100% !important;
+    }
+    #sub-menu {
+      display: none;
+    }
+    nav a {
+      padding: 5px 10px;
+    }
+    .box {
+      padding: 5px;
+    }
+    #navArea {
+      display: none;
+      height: 24px;
+      line-height: 24px;
+    }
+    .toggle-nav {
+      padding: 6px 10px;
+    }
+    #searchBox input {
+      width: 150px;
+      padding: 5px;
+      margin: 0;
+    }
+    #icon img {
+      width: 22px;
+    }
+  }
+  @media only screen and (min-width: 720px) {
+    #icon {
+      display: none;
+    }
+    #navArea {
+      height: 50px;
+      line-height: 50px;
+    }
+    nav {
+      display: block !important;
+    }
+    nav li {
+      display: inline-block;
+    }
+    #searchBox input {
+      height: 50px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+    #icon img {
+      width: 22px;
+    }
+  }
+  .fafaitem-space {
+    margin-left: 4px;
+  }
+  
+  /* ============================ Navbar Section End ============================================== */
+
+  /* ======================== Shop By Categories ================================= */
+  .section-33{
+    display: none;
+  }
+.section-3 {
+    padding-inline: 12rem;
+    margin-top: 6rem;
+  }
+  .sectin3-heading h1 {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .catehories-maindiv {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 32px;
+    padding: 10px;
+  }
+  .img1-div {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+  }
+  .img1-div img {
+    width: 40%;
+  }
+  .shop-category-button {
+    position: absolute;
+    top: 0%;
+    text-align: start;
+    right: 0px;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 3px 12px;
+  }
+  .check-browscategory-button {
+    border: 2px solid black;
+    padding: 12px 32px;
+    font-size: 4rem;
+    font-weight: 600;
+    background-color: transparent;
+  }
+  .browsallcategory {
+    margin-top: 12rem;
+    text-align: center;
+  }
+  
+  /* ============================== Heart Shape ================================= */
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  input[type="checkbox"] + label:before {
+    content: "\2665";
+    top: -11px;
+    left: -8px;
+    font-size: 40px;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    position: absolute;
+    transition: 0.5s ease;
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+  
+  input[type="checkbox"]:checked + label:after {
+    content: "\2764";
+    font-size: 40px;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    color: red;
+    transition: 0.5s ease;
+  }
+  .heart-shape {
+    position: absolute;
+    left: 35%;
+    top: -2%;
+  }
+  /* ================================ heart Shape END ======================================= */
+  
+  .shoes-details {
+    font-weight: 600;
+    margin-top: 12px;
+    word-spacing: 8px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .checked {
+    color: orange;
+  }
+  .addtocart-btn{
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #60B72A;
+    padding: 6px 32px;
+
+  }
+  .remove-btn{
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: #2FA7C0;
+    padding: 6px 60px;
+
+  }
+  .Addtocart-remove{
+    text-align: center;
+    margin-top: 2rem;
+
+  }
+ .date-added{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    word-spacing: 4px;
+  }
+
+  .end-line{
+    width: auto;
+    font-size: 20px;
+    color: #8A8A8A;
+  }
+  .enline-div{
+    margin-top: 4rem;
+  }
+  .enline-div1{
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+    width: 44%;
+  }
+  .enline-div2{
+    float: right;
+    margin-top: 12px;
+    width: 46%;
+  }
+
+  
+  /* ================== Shop By Category END ============================== */
+
+  /* ===================== My Account Section ============================= */
+
+  .subsection-1{
+    flex: 1;
+    color: #565656;
+    border-right: 1px solid #C4C4C4;
+
+  }
+  .subsection-2{
+    flex: 1;
+    color: #565656;
+    border-right: 1px solid #C4C4C4;
+    
+
+  }
+  .subsection-3{
+    flex: 1;
+    color: #565656;
+   
+  }
+  .icon-text{
+    display: flex;
+  }
+  .icon-text img{
+    height: 6%;
+    margin-top: 15px;
+    width: 13%;
+  }
+  .user-spn{
+    margin-top: 22px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color:#565656 ;
+    line-height: 21px;
+    margin-left: 1rem;
+    
+  }
+  .clickable-link{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 25px;
+    color: #565656;
+  }
+  .icon-text2 h2{
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: 4px;
+  }
+  .subsection-2 h3{
+    margin-left: 93px;
+  }
+  .icon-text2{
+    display: flex;
+  }
+  .icon-text2 img{
+    width: 10%;
+    height: 24%;
+  }
+
+  .icon-text3 h2{
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: 4px;
+  }
+  .subsection-2 h3{
+    margin-left: 56px;
+    margin-top: 10px;
+  }
+  .icon-text3{
+    display: flex;
+    margin-top: 50px;
+  }
+  .icon-text3 img{
+    width: 10%;
+    height: 24%;
+  }
+  
+  .icon-text4{
+    display: flex;
+  }
+  .icon-text4 img{
+    width: 10%;
+    height: 24%;
+  }
+
+  .icon-text4 h2{
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-left: 24px;
+    margin-top: 4px;
+  }
+  .subsection-3 h3{
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  .subsection-3 ul li{
+    list-style: none;
+    line-height: 36px;
+  }
+  .divide-three{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    gap: 4rem;
+  }
+  .maindivh2{
+    text-align: center;
+    color: #EA4335;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+  }
+  .main-div{
+    border: 1px solid #F1F1F1;
+    padding: 10px;
+    border-radius: 32px;
+    margin-block: 4rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #F1F1F1;
+  }
+  .my-account-section{
+    padding-inline: 10rem;
+  }
+
+  /* ==================== Footer Section ===================================== */
+.social-media-icon .fa {
+	padding: 12px;
+    font-size: 24px;
+    width: 50px;
+    height: 52px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 8px;
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+.social-media-icon .fa-facebook {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-instagram {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-twitter {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .social-media-icon .fa-linkedin {
+	background: white;
+	border-radius: 15px;
+	color: #11575C;
+  }
+  .links-About{
+	display: flex;
+	flex-direction: column;
+  }
+  .footer-main-div{
+	display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 153px;
+    background-color: #11575C;
+    margin-inline: 0px;
+    padding: 60px 60px;
+    margin-top: 6rem;
+  }
+.social-media-icon h2{
+	color: #D9D9D9;
+	font-size: 3rem;
+	font-weight: 900;
+}
+.social-media-icon p{
+	color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.company h2{
+	font-size: 28px;
+    font-weight: 600;
+    color: #D9D9D9;
+    line-height: 40px;
+}
+.links-About a{
+	color: white;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 56px;
+    font-weight: 300;
+}
+.mobile-navbar{
+  display: none;
+}
+.cart{
+  display: none;
+}
+.fixed-div-section{
+  display: none;
+}
+.wishlist-searchbar{
+  display: none;
+}
+
+/* ========================== Footer Section End ========================== */
+/* ====================== Desktop Site View ===================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .navleft {
+    margin-left: 2rem;
+}
+nav a {
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+.navArea .circle1 {
+  border-radius: 50%;
+  margin-left: 4rem;
+  padding: 22px;
+  margin-bottom: -19px;
+  background-color: #fff;
+}
+.sectin3-heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.my-account-section {
+  padding-inline: 4rem;
+}
+.section-3 {
+  padding-inline: 4rem;
+  margin-top: 2rem;
+}
+.footer-main-div{
+  gap: 50px;
+}
+.clickable-link {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 21px;
+  margin-left: 25px;
+  color: #565656;
+}
+.subsection-2 {
+  flex: 1;
+  color: #565656;
+  font-size: 15px;
+  border-right: 1px solid #C4C4C4;
+}
+.divide-three {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  gap: 2rem;
+}
+.shoes-details {
+  font-weight: 600;
+  margin-top: 12px;
+  word-spacing: 8px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.catehories-maindiv{
+  margin-top: 2rem;
+}
+input[type="checkbox"] + label:before {
+  content: "\2661";
+  top: -11px;
+  left: -8px;
+  font-size: 40px;
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  position: absolute;
+  transition: 0.5s ease;
+}
+.heart-shape {
+  position: absolute;
+  left: 34%;
+  top: -3%;
+}
+input[type="checkbox"]:checked + label:after {
+  content: "\2764";
+  font-size: 34px;
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  color: red;
+  transition: 0.5s ease;
+}
+.enline-div2 {
+  float: right;
+  margin-top: 12px;
+  width: 43%;
+}
+.end-line {
+  width: auto;
+  font-size: 18px;
+  color: #8A8A8A;
+}
+
+}

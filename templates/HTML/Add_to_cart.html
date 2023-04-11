@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/add_to_cart.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/CSS/responsive_css/respo-add_cart.css') }}">
+
+    <title>Cart</title>
+</head>
+
+<body>
+     <!-- ------------------------ Navbar For Mobile ------------------------- -->
+
+     <div class="mobile-navbar">
+        <i class="fa-sharp fa-solid fa-bars" id="cart-icon"></i>
+        <h2>Shoes</h2>
+        <img src="{{ url_for('static',filename='/Images/manimage.png') }}" alt="">
+    </div>
+
+
+    <div class="cart">
+        <div style="position: relative; border-bottom: 1px solid #C4C4C4;">
+            <h2 class="cart-title">Shoes</h2>
+
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+        <!-- ========= Drop-Down Menu ========================= -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">SHOP <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">For Men</a>
+                <a href="#about">For Women</a>
+                <a href="#contact">For Trends</a>
+            </div>
+        </div>
+        <div class="best-seller">BEST SELLER</div>
+
+        <div class="dropdown1">
+            <button onclick="myFunction1()" class="dropbtn1">GIFTING <i class="fa-solid fa-chevron-down"></i></button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="#home">For Him</a>
+                <a href="#about">For Her</a>
+            </div>
+
+
+
+            <!-- cart close -->
+
+        </div>
+    </div>
+
+
+    <!-- ================================ Mobile END ========================== -->
+
+    <nav>
+        <div class="wrapper">
+            <div class="box">
+                <form id="searchBox">
+                    <input placeholder="Search Products & Brands.." type="text" />
+                    <input id="submitBtn" class="mainLoginInput" type="submit" value="SEARCH" />
+                </form>
+                <nav id="navArea">
+                    <ul class="navArea">
+                        <li class="circle1"></li>
+                        <span class="navleft">
+                            <li>
+                                <a href="/">HOME<i class="fa-solid fa-house fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="/cart">CART<i class="fa-sharp fa-solid fa-basket-shopping fafaitem-space"></i>
+                                    <span class="digit-count">4</span></a>
+                            </li>
+                            <li>
+                                <a href="/wishlist">WISHLIST<i class="fa-solid fa-heart fafaitem-space"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">USERNAME<i class="fa-solid fa-user fafaitem-space"></i></a>
+                            </li>
+                        </span>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <!-- ======================== Navbar END========================================= -->
+
+    <section class="section-1">
+        <div class="main-div">
+            <div class="add-cart-div">
+                <div class="Adresses-save">
+                    <h2>From Saved Adresses</h2>
+                    <input type="text" placeholder="Enter Delivery Pincode">
+                </div>
+                <div class="catehories-maindiv">
+                    <div class="img1-div">
+                        <div class="heart-shape">
+                            <input id="heart3" type="checkbox" />
+                            <!-- <label for="heart">❤</label> -->
+                            <label for="heart3"></label>
+                        </div>
+                        <img src="{{ url_for('static',filename='/Images/cart_images/cartimage.jpg') }}" alt="">
+                        <div class="shoes-details">
+                            <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br>
+                            <h5 class="product-color" >Size: 8, Grey</h5>
+                            <span class="span-strike"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h4 class="product-price">&#x20B9;3,289</h4></span>
+                            <p class="discount-per" >53% OFF <br> 3 OFFERS APPLIED</p>
+                            </p>
+                            <span class="save-for-later">
+                                <h3>SAVE FOR LATER</h3>
+                                <h3>REMOVE</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catehories-maindiv">
+                    <div class="img1-div">
+                        <div class="heart-shape">
+                            <input id="heart4" type="checkbox" />
+                            <!-- <label for="heart">❤</label> -->
+                            <label for="heart4"></label>
+                        </div>
+                        <img src="{{ url_for('static',filename='/Images/cart_images/cartimage.jpg') }}" alt="">
+                        <div class="shoes-details">
+                            <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br>
+                            <h5 class="product-color" >Size: 8, Grey</h5>
+                            <span class="span-strike"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h4 class="product-price">&#x20B9;3,289</h4></span>
+                            <p class="discount-per" >53% OFF <br> 3 OFFERS APPLIED</p>
+                            </p>
+                            <span class="save-for-later">
+                                <h3>SAVE FOR LATER</h3>
+                                <h3>REMOVE</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="catehories-maindiv">
+                    <div class="img1-div">
+                        <div class="heart-shape">
+                            <input id="heart5" type="checkbox" />
+                            <!-- <label for="heart">❤</label> -->
+                            <label for="heart5"></label>
+                        </div>
+                        <img src="{{ url_for('static',filename='/Images/cart_images/cartimage.jpg') }}" alt="">
+                        <div class="shoes-details">
+                            <p> PUMA PURE XT FRESH TRAINING & <br> GYM SHOES FOR MEN <br>
+                            <h5 class="product-color" >Size: 8, Grey</h5>
+                            <span class="span-strike"><strike>&#x20B9;649.00</strike>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <h4 class="product-price">&#x20B9;3,289</h4></span>
+                            <p class="discount-per" >53% OFF <br> 3 OFFERS APPLIED</p>
+                            </p>
+                            <span class="save-for-later">
+                                <h3>SAVE FOR LATER</h3>
+                                <h3>REMOVE</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="place-order-div">
+                   <a href="/HTML/Payment.html"><button class="place-order-btn">PLACE ORDER</button></a>
+                </div>
+            </div>
+
+            <div class="price-details-div1">
+                <div class="price-details-div">
+                    <h2>PRICE DETAILS</h2>
+                    <table>
+                        <tr>
+                            <th>Price (1st item)</th>
+                            <th>&#8377;6,999</th>
+                        </tr>
+                        <tr>
+                            <th>Price (2nd item)</th>
+                            <th>&#8377;6,999</th>
+                        </tr>
+                        <tr>
+                            <th>Discount</th>
+                            <th style="color: #34A853;">&#8377;-7,420</th>
+                        </tr>
+                        <tr>
+                            <th>Delivery Charges</th>
+                            <th style="color:#34A853 ;">Free</th>
+                        </tr>
+                        <tr>
+                            <th style="font-weight: 700;">Total Amount</th>
+                            <th style="font-weight: 700;">&#8377;6,578</th>
+                        </tr>
+                    </table>
+                    <p style="line-height: 32px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #34A853;">You will save &#8377;7,420 on <br> this order </p>
+                    <div class="secure-payment"><img src="{{ url_for('static',filename='/Images/cart_images/Safeandsecurepayment.png') }}" alt=""><p>Safe and Secure Payments. <br> Easy returns. <br>
+                        100% Authentic products.</p></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ================ Position Fixed Section ============================ -->
+
+   <section class="fixed-div-section">
+    <div class="icons">
+      <a href="/home"><i class="fa-solid fa-house"></i></a>
+      <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+      <a href="/wishlist"><i class="fa-solid fa-heart"></i></a>
+      <a href="/cart"><i class="fa-solid fa-basket-shopping"></i><span class="digit-count1">4</span></a>
+
+    </div>
+   </section>
+
+   <!-- ================ Position Fixed Section End ========================= -->
+
+    <!-- =============== Footer Section Start ========================================= -->
+       <!-- ======================= Footer Section Start =========================================== -->
+    <section class="footer-section">
+        <footer>
+            <div class="footer-main-div">
+                <div class="social-media-icon">
+                    <h2>FASHION</h2>
+                    <p>Complete your style with awesome <br> shoes from us.</p>
+                    <span>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </span>
+                </div>
+
+                <div class="company">
+                    <h2>Company</h2>
+                    <div class="links-About">
+                        <a href="">About</a>
+                        <a href="">Contact us</a>
+                        <a href="">Support</a>
+                        <a href="">Careers</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Quick Link</h2>
+                    <div class="links-About">
+                        <a href="">Share Location</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <h2>Legal</h2>
+                    <div class="links-About">
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- ======================= Footer Section End =========================================== -->
+    <script src="{{ url_for('static',filename='/JS/wishlist.js') }}"></script>
+</body>
+
+</html>
